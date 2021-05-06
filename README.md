@@ -1,51 +1,60 @@
-**Ucount**
-===
+# Ucount
 
-# 宅记
+[![REAMDE](https://img.shields.io/badge/Language-Chinese-brightgreen)](README_zh.md)
+[![issues](https://img.shields.io/github/issues/yuukidach/Ucount)](https://github.com/yuukidach/Ucount/issues)
+[![forks](https://img.shields.io/github/forks/yuukidach/Ucount)](https://github.com/yuukidach/Ucount/network/members)
+[![stars](https://img.shields.io/github/stars/yuukidach/Ucount)](https://github.com/yuukidach/Ucount/stargazers)
+[![LICENSE](https://img.shields.io/github/license/yuukidach/Ucount)](LICENSE)
 
-***
-做这个APP纯粹是因为不希望被冗余的功能和广告烦恼，只要能够满足自己的日常所需就好。
+The purpose of writing this Android APP is to avoid bordering of ads. Everytime when we try to doing bookkeeping, we only need to open the APP, write down what we have spent / earned, then close it. The whole process may takes only serveral seconds. But many other APPs ask us see an ad when we open them. It is a waste of time.
 
-整体界面参考的是Timi记账。因为是新手写Android，有很多方面都做得不是很好，后续还会进行迭代更新。
+## Details
 
-<p align="right">2017-03-15</p>
+### Main page
 
-### 用到的第三方库
-> [markushi/android-circlebutton](https://github.com/markushi/android-circlebutton)
+<img src="./markdown_res/main_page.png" width="40%" />
 
-> [LitePalFramework/LitePal](https://github.com/LitePalFramework/LitePal) 
+Items in the left side are earning and those in the right side are costs.
 
-> [extensible-page-indicator](https://github.com/merhold/extensible-page-indicator) 
+Click the "+" button, the APP will navigate to page which can choose earn / cost items to add.
 
-### 软件截图
+Click the icon in the top right corner, user can surf to the statistics page.
 
-一开始本来打算第二界面自己重新布局的，结果发现让软键盘弹出来还是太难看了，就也写了个键盘输入
+### Statistics page
 
-**主界面**  
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_1490531757.png?raw=true" width="40%">
+<img src="./markdown_res/stat_page.png" width="40%" />
 
-**删除界面**    
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_1490519168.png?raw=true" width="40%">
+This page will display 2 pie charts of cost and earning items in one month.
 
-**支出项目界面**    
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_1490533156.png?raw=true" width="40%">
+### Add item page
 
-**收入项目界面**    
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_1490533171.png?raw=true" width="40%">
+<img src="./markdown_res/add_page.png" width="40%" />
 
-**备注界面**    
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_1490519189.png?raw=true" width="40%">
+Click the notebook button, we can add descriptions about the item.
 
-**账本添加界面**  
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_2018-03-15-15-43-26-363_com.yuukidach.ucount.png" width="40%">
+### Description page
 
-**旧版收支界面**  
-<img src="https://github.com/yuukidach/Ucount/blob/master/Markdown%20Image/Screenshot_1490237812.png?raw=true" width="40%">
+<img src="./markdown_res/description_page.png" width="40%" />
 
-### 附加功能说明
-1. 长按首页以及账本横幅可以更换图片
-2. 单个项目左滑删除
+The description can be no more than 30 characters.
 
+### Book page
 
-### 测试机型：
-小米6
+<img src="./markdown_res/book_page.png" width="40%" />
+
+There is a drawer in the main page. Sliding from the left edge to the right will call out the drawer. In the drawer, we can add and select different account books.
+
+### Tips
+
+1. Swipe from left to right to delete an item / account book.
+2. Long press the header image in main page / drawer can trigger the album. Then you can choose another image to replace it.
+
+### Third party libraries
+
+- [markushi/android-circlebutton](https://github.com/markushi/android-circlebutton)
+
+- [LitePalFramework/LitePal](https://github.com/LitePalFramework/LitePal) 
+
+- [extensible-page-indicator](https://github.com/merhold/extensible-page-indicator)
+
+- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart)
